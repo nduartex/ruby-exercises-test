@@ -25,7 +25,5 @@ RSpec.describe BMI, type: :request do
     it 'returns "Error, valores no válidos"' do
       expect(subject.get_bmi(0, 1.75)).to eq('Error, valores no válidos')
     end
-
-
   end
 end
