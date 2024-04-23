@@ -22,7 +22,7 @@ RSpec.describe CountElement, type: :request do
 
     context 'when the array is nil' do
       it 'should raise error' do
-        expect { subject.count_element_automatic(nil, 5).to raise_error(NoMethodError) }
+        expect { subject.count_element_automatic(nil, 5) }.to raise_error(NoMethodError)
       end
     end
 
@@ -49,7 +49,7 @@ RSpec.describe CountElement, type: :request do
 
     context 'when the array is nil' do
       it 'should raise error' do
-        expect { subject.count_element_manual(nil, 5).to raise_error(NoMethodError) }
+        expect { subject.count_element_manual(nil, 5) }.to raise_error(NoMethodError)
       end
     end
   end
